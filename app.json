@@ -7,9 +7,9 @@
     "string",
     "generator"
   ],
-  "success_url": "https://telegram.dog/string_session_Nsbot",
-  "website": "https://github.com/Ns-AnoNymouS/string-session-generator-bot",
-  "repository": "https://github.com/Ns-AnoNymouS/string-session-generator-bot",
+  "success_url": "https://t.me/santhuvc",
+  "website": "https://t.me/santhuvc",
+  "repository": "https://github.com/santhu113/string-session-generator-bot.git",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
