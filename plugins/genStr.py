@@ -13,12 +13,15 @@ from pyrogram.errors import (
     PhoneCodeInvalid, PhoneCodeExpired
 )
 
-
-API_TEXT = """🙋‍♂ Hi {},
-
-I am a String Session generator bot.
-
-For generating string session send me your `API_ID` 🐿
+Santhuvcplayerbot_IMG = "https://te.legra.ph/file/422292c9fb5561a9be9c6.jpg"
+PM_START_TEXT = """
+*👋 Hello {} !*
+✗ *𝘏𝘪 𝘯𝘦𝘯𝘶 𝘮𝘦 𝘨𝘳𝘰𝘶𝘱 𝚂𝚃𝚁𝙸𝙽𝙶 Bᴏᴛ 𝘯𝘪*
+✗ *NANU ME GROUP LO ADD CHESUKONDI☺ NENU ADVANCE 𝚂𝚃𝚁𝙸𝙽𝙶 𝚂𝙴𝚂𝚂𝙸𝙾𝙽 BOT NI!*
+✗ *Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: 𝙼𝚄𝚂𝙸𝙲 𝙽𝙴𝚃𝚆𝙾𝚁𝙺!*
+"""
+────────────────────── 
+For generating string session send me your `API_ID` 💞
 """
 HASH_TEXT = "Ok Now Send your `API_HASH` to Continue.\n\nPress /cancel to Cancel.🐧"
 PHONE_NUMBER_TEXT = (
@@ -45,7 +48,7 @@ async def generate_str(c, m):
     try:
         check_api = int(api_id)
     except Exception:
-        await m.reply("**--🛑 API ID Invalid 🛑--**\nPress /start to create again.")
+        await m.reply("**--😅 API ID Invalid 💞--**\nPress /start to create again.")
         return
 
     get_api_hash = await c.ask(
@@ -61,13 +64,13 @@ async def generate_str(c, m):
     await get_api_hash.request.delete()
 
     if not len(api_hash) >= 30:
-        await m.reply("--**🛑 API HASH Invalid 🛑**--\nPress /start to create again.")
+        await m.reply("--**☺ API HASH Invalid 💞**--\nPress /start to create again.")
         return
 
     try:
         client = Client(":memory:", api_id=api_id, api_hash=api_hash)
     except Exception as e:
-        await c.send_message(m.chat.id ,f"**🛑 ERROR: 🛑** `{str(e)}`\nPress /start to create again.")
+        await c.send_message(m.chat.id ,f"**☹️ ERROR: ☹️** `{str(e)}`\nPress /start to create again.")
         return
 
     try:
@@ -226,26 +229,27 @@ async def about_cb(c, m, cb=True):
     me = await c.get_me()
     about_text = f"""**MY DETAILS:**
 
-__🤖 My Name:__ {me.mention(style='md')}
+__🤖 My Name:__ {me.mention(style='santhu')}
     
 __📝 Language:__ [Python3](https://www.python.org/)
 
 __🧰 Framework:__ [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-__👨‍💻 Developer:__ [𝐀𝐧𝐨𝐧𝐲𝐦𝐨𝐮𝐬](https://t.me/Ns_AnoNymouS)
+__👨‍💻 Developer:__ [𝐀𝐧𝐨𝐧𝐲𝐦𝐨𝐮𝐬](https://t.me/santhuvc)
 
-__📢 Channel:__ [NS BOT UPDATES](https://t.me/Ns_bot_updates)
+__📢 Channel:__ [ BOT UPDATES](https://t.me/santhuvc)
 
-__👥 Group:__ [Ns BOT SUPPORT](https://t.me/Ns_Bot_supporters)
+__👥 Group:__ [santhu BOT SUPPORT](https://t.me/santhuvc)
 
-__🌐 Source Code:__ [Press Me 😋](https://github.com/Ns-AnoNymouS/string-session-generator-bot)
+__🌐 Source Code:__ [Press Me 😋](http://t.me/santhuvc)
 
-__🚀 YouTube Channel:__ [Ns Bots](https://youtube.com/channel/UC9NnqJ63aSzv457iUMM06vQ)
+__🚀 YouTube Channel:__ [santhu Bots](https://youtube.com/channel/UC7QMr8IDR65vciXrwx4XLiQ)
 """
 
     buttons = [[
         InlineKeyboardButton('💡 Help', callback_data='help'),
         InlineKeyboardButton('❌ Close', callback_data='close')
+        InlineKeyboardButton(text="➕𝗡𝗔𝗡𝗨 𝗔𝗗𝗗 𝗖𝗛𝗘𝗦𝗨 𝗞𝗢𝗡𝗗𝗜➕", url="http://t.me/Santhustringgeneratorbot?startgroup=true"),
     ]]
     if cb:
         await m.answer()
@@ -262,7 +266,7 @@ async def close(c, m):
 
 async def is_cancel(msg: Message, text: str):
     if text.startswith("/cancel"):
-        await msg.reply("⛔ Process Cancelled.")
+        await msg.reply("😏Process Cancelled.")
         return True
     return False
 
