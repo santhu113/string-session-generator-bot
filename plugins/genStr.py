@@ -15,7 +15,7 @@ from pyrogram.errors import (
 
 Santhuvcplayerbot_IMG = "https://te.legra.ph/file/422292c9fb5561a9be9c6.jpg"
 PM_START_TEXT = """
-*👋 Hello {} !*
+*👋 ʜᴇʟʟᴏ {} !*
 
 🔥 ɪᴀᴍ ᴀ sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ. 
 
@@ -23,7 +23,6 @@ PM_START_TEXT = """
 
 ғᴏʀ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴛʀɪɴɢ sᴇssɪᴏɴ sᴇɴᴅ ᴍᴇ ʏᴏᴜʀ `ᴀᴘɪ_ɪᴅ` 💞
 """
-────────────────────── 
 
 HASH_TEXT = "ᴏᴋ ɴᴏᴡ sᴇɴᴅ ʏᴏᴜʀ `ᴀᴘɪ_ʜᴀsʜ` ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.\n\nᴘʀᴇss /cancel ᴛᴏ ᴄᴀɴᴄᴇʟ.🐧"
 PHONE_NUMBER_TEXT = (
